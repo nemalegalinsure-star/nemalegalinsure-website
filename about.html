@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Nema Legal  | Relable, Affordable and Trusted by Many</title>
+    <title>About | Nema Legal  | Reliable, Affordable and Trusted by Many</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
@@ -157,12 +157,17 @@
             <div class="footer-section">
                 <h3>Newsletter</h3>
                 <p>Subscribe to our newsletter for updates and legal tips.</p>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="a3b915ff-2af0-49b1-bf67-22b7a202e85b">
-                    <input type="email" placeholder="Your Email" required>
+                <form action="https://api.web3forms.com/submit" method="POST" class="newsletter-form">
+                   <input type="hidden" name="access_key" value="a3b915ff-2af0-49b1-bf67-22b7a202e85b">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
                     <button type="submit" class="btn">Subscribe</button>
                 </form>
-            </div>
+            </div>>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Nema Legal Insurance. All rights reserved. | Privacy Policy | Terms of Service | Disclaimer</p>
@@ -208,6 +213,7 @@
 </body>
 
 </html>
+
 
 
 
