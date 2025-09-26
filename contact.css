@@ -12,35 +12,22 @@
 
 .contact-info-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 1.5rem;
-    gap: 1rem;
 }
 
 .contact-icon {
     width: 50px;
     height: 50px;
-    min-width: 50px;
     background: var(--primary);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 1rem;
     font-size: 1.2rem;
-    flex-shrink: 0;
 }
-
-.contact-info-item div h4 {
-    margin-bottom: 0.5rem;
-    color: var(--primary);
-}
-
-.contact-info-item div p {
-    margin-bottom: 0;
-    line-height: 1.5;
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -137,18 +124,8 @@
         min-height: 100px;
     }
     
-    .contact-info-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-    }
     
-    .contact-icon {
-        align-self: center;
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
-    }
+    
 }
 
 
@@ -200,4 +177,68 @@
     .contact-form select {
         font-size: 16px; 
     }
+}
+
+/* Contact Form Button Styles */
+.contact-form button.btn {
+    width: auto; 
+    min-width: 200px; 
+    max-width: 300px; 
+    padding: 14px 40px;
+    margin: 10px auto; 
+    display: block; 
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 6px;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(201, 168, 117, 0.3);
+}
+
+.contact-form button.btn:hover {
+   
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(201, 168, 117, 0.4);
+}
+
+.contact-form button.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(201, 168, 117, 0.3);
+}
+
+/* Responsive button sizing */
+@media (max-width: 768px) {
+    .contact-form button.btn {
+        min-width: 180px;
+        max-width: 250px;
+        padding: 12px 35px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form button.btn {
+        min-width: 160px;
+        max-width: 220px;
+        padding: 12px 30px;
+        font-size: 1rem;
+        margin: 15px auto; /* More spacing on mobile */
+    }
+}
+
+/* Alternative centered layout option */
+.contact-form .btn-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-form .btn-container .btn {
+    display: inline-block; /* Makes button only as wide as content */
+    width: auto;
+    padding: 14px 50px;
+    margin: 0 auto;
 }
